@@ -4,6 +4,7 @@
     <style>
       body {
         font-family: "Courier New", Courier, monospace;
+        
 
         color: aliceblue;
         font-size: 25px;
@@ -13,12 +14,16 @@
         display: flex;
         padding-left: 200px;
         border: 2px solid rgb(50, 47, 47);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
       }
       nav {
         float: right;
         padding-left: 50%;
         padding-top: 30px;
         text-align: center;
+       
       }
       .img {
         background-color: rgb(0, 168, 112);
@@ -41,18 +46,41 @@
         display: flex;
         flex-wrap: wrap;
         background-color: rgb(0, 168, 112);
-        margin-right: 100px;
-        margin-left: 100px;
+        margin: auto;
+       
         padding-left: 80px;
         height: 300px;
+        width: 95%;
+        
         
       }
       .col1{
-        padding-right: 200px;
+       text-align: center;
+        font-size: large;
+        
+       padding-right: 90px;
       }
       .col2{
+        text-align: center;
 padding-right:90px;
+font-size: large;
+
       }
+      .contact{
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 40px;
+        
+      
+      }
+      .footer{
+        background-color: rgb(22, 33, 41);
+        text-align: center;
+      
+        
+      }
+     
      
     </style>
   </head>
@@ -60,7 +88,7 @@ padding-right:90px;
     <div class="container">
       <div>
         <header><h1>BOOTSTRAP</h1></header>
-      </div>
+      </div class="nav">
       <nav>PORTFOLIO ABOUT CONTACT</nav>
     </div>
     <div class="img">
@@ -126,8 +154,28 @@ padding-right:90px;
             <th class="col1">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</th>
             <th class="col2">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</th>
         </tr>
-       <tr><th colspan="2"><button>free download</button></th></tr>
+       <tr><th colspan="2" class="button"><button>free download</button></th></tr>
     </table>
    </div>
-  </body>
+   <div class="contact">
+    <h3>CONTACT ME</h3>
+    <label for="fullName">Full name</label>
+    <input type="text" name="fullName" id="fullname"><br>
+    <label for="email">Email address</label>
+    <input type="email" name="email" id="email"><br>
+    <label for="phonenumber">phone Number</label>
+    <input type="number" name="phonenumber" id="phonenumber"><br>
+    <label for="message">Message</label>
+    <input type="message"><br>
+    <button>send</button>
+   </div>
+   <div class="footer">
+    <h4>LOCATION</h4>
+    <p>2215 john daniel drive <br>clark,MO 65243</p>
+    <h4>AROUND THE WEB</h4>
+    <h4>ABOUT FREELANCER</h4>
+    <p>freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap</p>
+   </div>
+   
+</body>
 </html>
