@@ -7,38 +7,63 @@
         
 
         color: aliceblue;
-        font-size: 25px;
+    margin: 0%;
+    padding: 0;
+
       }
-      .container {
-        background-color: black;
-        display: flex;
-        padding-left: 200px;
-        border: 2px solid rgb(50, 47, 47);
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-      }
-      nav {
-        float: right;
-        padding-left: 50%;
-        padding-top: 30px;
-        text-align: center;
+      .header{
+        height: 100px;
+        background-color: rgb(57, 57, 57);
+       display: flex;
+       align-items: center;
+       text-decoration: none;
+
        
       }
+
+     .navbar{
+      
+      display: flex;
+      list-style: none;
+      
+    }
+    .navbar li a{
+      padding-left: 30px;
+      
+    }
       .img {
         background-color: rgb(0, 168, 112);
         height: 500px;
         text-align: center;
-      }
-      .portfolio {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 300px;
-        margin-right: 160px;
-        padding: px;
         
-      
       }
+     
+        
+       
+       
+       
+        .portfolio{
+          display: flex;
+          flex-wrap: wrap;
+        }
+      
+      .portfolio img{
+        width: 170px;
+        height: 290px;
+        display: block;
+        flex: 0 0 31.23%;
+        padding: 10px;
+      }
+      .container{
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      h3{
+        text-align: center;
+      }
+      
+      
       .item {
         padding: 5px;
       }
@@ -75,32 +100,54 @@ font-size: large;
       
       }
       .footer{
-        background-color: rgb(22, 33, 41);
-        text-align: center;
-      
-        
-      }
-     
-     
+              width: 100%;
+                height: 200px;
+                background-color: rgb(30, 56, 89);
+                float: left;
+                text-align: center;
+                padding: auto;
+                margin: 0 auto;
+                display: flex;
+                
+            }
+            .first:nth-child(2){
+                width: 33.3%;
+             padding-top: 30px;
+             
+               
+            }
+            .first:last-child{
+              padding-top: 30px; 
+                
+width: 33.3%;
+;
+            }
+            .first:first-child{
+               width: 33.3%;
+               padding-top: 30px;
+               
+            }
+
     </style>
   </head>
   <body>
-    <div class="container">
-      <div>
-        <header><h1>BOOTSTRAP</h1></header>
-      </div class="nav">
-      <nav>PORTFOLIO ABOUT CONTACT</nav>
+    <div class="header">
+      <h1>START BOOTSTRAP</h1>
+      <ul class="navbar">
+      <li><a href="#"></a>PORTFOLIO</li>
+      <li><a href="#"></a>ABOUT</li>
+      <li><a href="#"></a>CONTACT</li>
+    </ul>
     </div>
     <div class="img">
-      <center>
-        <img src="avataaars.svg" alt="logo" height="300px" width="300px" />
-      </center>
-
+      <img src="avataaars.svg" alt="logo" height="300px" width="300px" />
       <h2>START BOOTSTRAP</h2>
       <h3>Graphic Artist - Web Designer - Illustrator</h3>
     </div>
-    <center><h3 style="color: grey">PORTFOLIO</h3></center>
+    <div class="container">
+      <h3 style="color: grey">PORTFOLIO</h3>
     <div class="portfolio">
+      
       <img
         src="cabin.png"
         alt="cabin"
@@ -144,6 +191,7 @@ font-size: large;
         class="item"
       />
     </div>
+  </div>
    
    <div class="about">
    <table>
@@ -170,11 +218,17 @@ font-size: large;
     <button>send</button>
    </div>
    <div class="footer">
-    <h4>LOCATION</h4>
-    <p>2215 john daniel drive <br>clark,MO 65243</p>
-    <h4>AROUND THE WEB</h4>
-    <h4>ABOUT FREELANCER</h4>
-    <p>freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap</p>
+   <div class="first">
+    <h2>LOCATION</h2>
+   <p>2215 John Daniel Drive
+    Clark, MO 65243</p> </div>
+   <div class="first">
+    <h2>AROUND THE WEB</h2>
+   </div>
+   <div class="first">
+    <h2>ABOUT FREELANCER</h2>
+    <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .</p>
+   </div>
    </div>
    
 </body>
