@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(189, 189, 189);
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            padding: 50,50,50,50;
+        }
+        .section{
+            display: flex;
+            align-items: center;
+            padding: 100px;
+        }
+        #result{
+            border: 2 px solid black;
+        }
+       
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1>To Adding two numbers</h1><hr>
+
+        
+        <input type="number" name="number1" id="number1"> <br>
+
+        <input type="number" name="number2" id="number2"><br>
+        <button type="button" onclick="enter()">TOTAL</button><br>
+        
+
+        <p id="result"></p>
+    </div>
+    </div>
+    <script>
+        function enter(){
+            let a =  document.getElementById("number1").value;
+            let b =  document.getElementById("number2").value;
+            let c = parseFloat(a) + parseFloat(b); 
+
+            document.getElementById("result").innerHTML=c;
+        }
+    </script>
+
+</body>
+</html>
