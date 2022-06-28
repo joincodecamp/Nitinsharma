@@ -1,0 +1,27 @@
+body {
+  font-family: monospace;
+}
+.container {
+  background-color: rgb(126, 131, 133);
+  text-align: center;
+}
+.table {
+  font-size: 30px;
+  padding-top: 20px;
+
+  height: 300px;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+input {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(149, 151, 150);
+  font-size: 30px;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+#data {
+  width: 405px;
+  background-color: rgb(188, 217, 217);
+}
